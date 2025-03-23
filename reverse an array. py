@@ -1,0 +1,34 @@
+#reverse an array using reverse() method
+arr = [1,2,3,4,5]
+arr.reverse()
+print(arr)
+
+#reverse an array using slicing
+arr = arr[::-1] 
+print(arr)
+
+#reverse an array using loop
+new_arr = []
+for i in range(len(arr)-1,-1,-1):
+    new_arr.append(arr[i])
+print(new_arr)
+
+'''Which is Most Efficient?
+If you want to modify the original array:
+
+Use the reverse() method. It is the most space-efficient and simple.
+
+If you want to keep the original array unchanged:
+
+Use slicing ([::-1]). It is simple and concise, though it uses extra space.
+
+If you want explicit control or need to perform additional operations while reversing:
+
+Use the loop method. It is more flexible but slightly more verbose.
+
+Practical Recommendation:
+Use reverse() if you don’t need the original array.
+
+Use slicing if you need a new reversed array and want concise code.
+
+Use a loop if you need more control or are performing additional operations during the reversal'''
